@@ -1,0 +1,112 @@
+body { margin:0; background:#FFFFFF; font-size: 13pt; color:#333333; font-family: 微軟正黑體; }
+
+ul, li { margin:0; padding:0; list-style:none; }
+a { text-decoration:none; }
+
+/* 版頭 */
+.headArea { margin:0 auto; width:1000px; overflow:hidden; }
+.head-L { float:left; padding:10px 0px 0px 0px; }
+.head-R { float:right; padding-top:70px; }
+
+/* 版頭按鈕列 */
+.navbar { margin: 0 auto; width: 1000px; overflow: hidden; background-color: #333; }
+.navbar a { float: left; font-size: 16px; color: white; text-align: center; padding: 14px 16px; text-decoration: none; }
+.dropdown { float: left; overflow: hidden; }
+.dropdown .dropbtn { font-size: 16px; border: none; outline: none; color: white; padding: 14px 16px; background-color: inherit; font-family: inherit; margin: 0; }
+.navbar a:hover, .dropdown:hover .dropbtn { background-color: red; }
+.dropdown-content { display: none; position: absolute; background-color: #f9f9f9; min-width: 160px; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); z-index: 1; }
+.dropdown-content a { float: none; color: black; padding: 12px 16px; text-decoration: none; display: block; text-align: left; }
+.dropdown-content a:hover { background-color: #ddd; }
+.dropdown:hover .dropdown-content { display: block; }
+
+/* 版尾 */
+.footerArea { width:100%; background:#727272; box-shadow:0px 0px 10px #000000; }
+.footer { margin:0 auto; width:1000px; padding:10px 0px; color:#FFFFFF; line-height:25px; overflow:hidden; }
+.footer-L { float:left; }
+.footer-R { float:right; padding-top:40px; }
+
+/* 內頁版身 */
+.bodyArea { margin:0 auto; width:1000px; overflow:hidden; }
+.body-L { float:left; width:240px; padding:10px 0px; margin-right:10px; overflow:hidden; }
+.body-R { width:750px; padding:10px 0px; min-height:300px; overflow:hidden; }
+
+/* 版頭按鈕列增加移除 CLASS */
+.headbtn-fixed { z-index:1000; position:fixed; top:0;left:0; box-shadow:0px 0px 10px #000000; }
+
+/* 網頁標題圖片 */
+.pgtit { padding:10px 0px; margin-bottom:10px; border-bottom:1px #727272 solid; }
+
+/* 個人基本資料 */
+.formtab { width:100%; overflow:hidden; }
+.formtab li { height:30px; padding:10px 0px; border-bottom:1px #727272 dotted; }
+.formtab .L { float:left; width:50%; }
+
+/* 表單欄位 */
+.formsty input[type="text"], 
+.formsty input[type="password"], 
+.formsty input[type="file"], 
+.formsty select, 
+.formsty textarea {
+padding:5px; font-size:12.5pt; color:#2a2a2a; border-radius:5px; font-family:微軟正黑體;  }
+
+/* 表單按鈕 */
+input.formbtn{ background:#0066FF; color:#FFFFFF; text-align:center; font-size:14pt; padding:6px 0px; border-radius:5px;cursor:pointer; border:none; font-family:微軟正黑體; width:90px;}
+input.formbtn:hover{ background:#4D94FF; }
+
+/* 選項圓鈕 radio */
+.radioCss { display: none; }
+.radioCss + label { -webkit-appearance:none; background-color:#FAFAFA; border:1px solid #CACECE; box-shadow:0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05); padding:9px; border-radius:50px; display:inline-block; position:relative;  cursor:pointer; }
+.radioCss:checked + label:after { content:' '; width:12px; height:12px; border-radius:50px; position:absolute; top:3px; background:#99A1A7; box-shadow:inset 0px 0px 10px rgba(0,0,0,0.3); text-shadow:0px; left:3px; font-size:32px; }
+.radioCss:checked + label { background-color:#E9ECEE; color:#99A1A7; border:1px solid #ADB8C0; box-shadow:0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1), inset 0px 0px 10px rgba(0,0,0,0.1); }
+.radioCss + label:active, .radioCss:checked + label:active { 
+box-shadow:0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1); 
+} /* End */
+
+/* 核取方塊 checkbox */
+.ckboxCss { display: none; }
+.ckboxCss + label { background-color:#FAFAFA; border:1px solid #CACECE; box-shadow:0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05); padding:9px; border-radius:3px; display:inline-block; position:relative; cursor:pointer; }
+.ckboxCss + label:active, .ckboxCss:checked + label:active { box-shadow:0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1); }
+.ckboxCss:checked + label { background-color:#E9ECEE; border:1px solid #ADB8C0; box-shadow:0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1); color:#99A1A7; }
+.ckboxCss:checked + label:after { content:'\2714'; font-size:14px; position:absolute; top:0px; left:3px; color:#99A1A7;
+} /* End */
+
+/* 全屏背景 */
+#MsgBg{ z-index:2000; position:fixed; width:100%; height:100%; top:0; left:0; background:rgba(0,0,0,0.8); display:none; }
+
+/* 訊息視窗 */
+#MsgAlert{ z-index:3000; position:fixed; width:400px; height:200px; top:50%; left:50%; margin-top:-100px; margin-left:-200px; background:#FFF; border-radius:5px; border:5px solid #a10000; box-shadow:0px 0px 10px #000; display:none; }
+#MsgAlert .MsgArea{ margin:10px; }
+#MsgAlert .tit{ font-size:17pt; color:#0066FF; padding-bottom:5px; border-bottom:1px solid #727272; } 
+#MsgAlert .imgs{ float:left; height:70px; margin-right:10px; }
+#MsgAlert .msg{ height:110px; line-height:30px; padding:5px 0px 0px 10px; }
+#MsgAlert .btn { text-align:right; }
+#MsgAlert a.btnYes{ padding:5px 15px; background:#0066FF; color:#FFF; border-radius:5px; cursor:pointer; }
+#MsgAlert a:hover.btnYes{ background:#3384FF; }
+.MsgDefBorder { border:1px #CACECE solid; } /* 預設框線顏色 */
+.MsgErrBorder { border:1px #FF287E solid; } /* 錯誤框線顏色 */
+
+/* 表格式瀏覽 */
+.tab2{border:1px #727272 solid; width:100%;margin-top:10px;}
+.tab2 td{padding:5px;}
+.tab2tit{background:#0066FF;color:#fff;text-align:center;}
+tr:nth-child(even) {background: #CCC}
+
+/* 瀏覽按鈕 */
+a.btn-vi { background:#0066FF; color:#FFFFFF; text-align:center; font-size:12pt; padding:3px 3px; border-radius:5px;cursor:pointer; border:none; font-family:微軟正黑體;}
+a:hover.btn-vi { background:#4D94FF; }
+
+/* 刪除按鈕 */
+a.btn-del { background:#C40000; color:#FFFFFF; text-align:center; font-size:12pt; padding:3px 3px; border-radius:5px;cursor:pointer; border:none; font-family:微軟正黑體;}
+a:hover.btn-del { background:#D54D4D; }
+
+/* 詢問視窗 */
+#MsgYesNo{z-index:2001; position:fixed;width:400px;height:200px;top:50%;left:50%;margin-top:-100px;margin-left:-200px;background:#FFF;border-radius:5px; border:5px solid #a10000; box-shadow:0px 0px 10px #000;display:none;}
+#MsgYesNo .MsgArea{margin:10px;}
+#MsgYesNo .tit{font-size:17pt;color:#0066FF;padding-bottom:5px;border-bottom:1px solid #727272;} 
+#MsgYesNo .imgs{float:left;height:70px;margin-right:10px;}
+#MsgYesNo .msg{height:110px;line-height:30px;padding:5px 0px 0px 10px;}
+#MsgYesNo .btn {text-align:right;}
+#MsgYesNo a.btnYes{padding:5px 15px; background:#0066FF;color:#FFF;border-radius: 5px 5px 5px 5px;cursor:pointer;}
+#MsgYesNo a:hover.btnYes{background:#3384FF;}
+#MsgYesNo a.btnNo{padding:5px 15px; background:#C40000;color:#FFF;border-radius: 5px 5px 5px 5px;cursor:pointer;}
+#MsgYesNo a:hover.btnNo{background:#CF3333;}
